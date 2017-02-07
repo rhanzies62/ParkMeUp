@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Scolus.Data.Entities;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -14,5 +15,10 @@ namespace Scolus.Data
         {
 
         }
+
+        public DbSet<School> Schools { get; set; }
+        public DbSet<Faculty> Faculties { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<Position> Positions { get; set; }
     }
 }

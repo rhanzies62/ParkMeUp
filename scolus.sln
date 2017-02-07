@@ -3,8 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{15E9E55B-A3B5-4563-AEDD-B9E557A74C2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{B7F6A395-82D1-4FC0-BE7A-7002F1B0FFA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{E613EBE5-0A46-43A4-952C-BD26DDC1D99A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{832DAE88-BF79-4716-BABC-F26284E89CE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scolus.Data", "Data\Scolus.Data\Scolus.Data.csproj", "{DB00B681-B5D6-4F24-B298-D8CF911088BC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB00B681-B5D6-4F24-B298-D8CF911088BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB00B681-B5D6-4F24-B298-D8CF911088BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB00B681-B5D6-4F24-B298-D8CF911088BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB00B681-B5D6-4F24-B298-D8CF911088BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB00B681-B5D6-4F24-B298-D8CF911088BC} = {15E9E55B-A3B5-4563-AEDD-B9E557A74C2F}
 	EndGlobalSection
 EndGlobal
