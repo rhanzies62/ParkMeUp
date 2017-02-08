@@ -1,5 +1,4 @@
-﻿using Scolus.Data.Entities;
-using Scolus.Data.Interface;
+﻿using Scolus.Data.Interface;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,21 +6,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Scolus.Data.Base
+namespace Scolus.Data.Entities
 {
-    public abstract class BaseUser : IUser, IAudit
+    public class Phone : IAudit
     {
-        [Required]
-        public string FirstName { get; set; }
+        [Key]
+        public int PhoneId { get; set; }
 
         [Required]
-        public string LastName { get; set; }
+        [MaxLength(11)]
+        public string Number { get; set; }
+
+        public string Extension { get; set; }
 
         [Required]
-        public string MiddleName { get; set; }
-
-        [Required]
-        public Gender Gender { get; set; }
+        public PhoneType Type { get; set; }
 
         [Required]
         public string CreatedBy { get; set; }

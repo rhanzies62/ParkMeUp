@@ -1,5 +1,4 @@
-﻿using Scolus.Data.Entities;
-using Scolus.Data.Interface;
+﻿using Scolus.Data.Interface;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,21 +6,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Scolus.Data.Base
+namespace Scolus.Data.Entities
 {
-    public abstract class BaseUser : IUser, IAudit
+    //TODO: Foreign Key 
+    //TODO: School ID and CustomFieldID should not be duplicated
+    public class FacultyCustomFieldSetUp : IAudit
     {
-        [Required]
-        public string FirstName { get; set; }
+        [Key]
+        public int FacultyCustomFieldSetUpId { get; set; }
 
         [Required]
-        public string LastName { get; set; }
+        public int CustomFieldId { get; set; }
 
         [Required]
-        public string MiddleName { get; set; }
+        public int SchoolId { get; set; }
 
         [Required]
-        public Gender Gender { get; set; }
+        public bool Required { get; set; }
 
         [Required]
         public string CreatedBy { get; set; }

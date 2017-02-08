@@ -7,21 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Scolus.Data.Base
+namespace Scolus.Data.Entities
 {
-    public abstract class BaseUser : IUser, IAudit
+    public abstract class CustomField : IAudit
     {
-        [Required]
-        public string FirstName { get; set; }
+        [Key]
+        public int CustomFieldId { get; set; }
 
         [Required]
-        public string LastName { get; set; }
+        public CustomFieldType Type { get; set; }
 
         [Required]
-        public string MiddleName { get; set; }
-
-        [Required]
-        public Gender Gender { get; set; }
+        [MaxLength(20)]
+        public string Name { get; set; }
 
         [Required]
         public string CreatedBy { get; set; }

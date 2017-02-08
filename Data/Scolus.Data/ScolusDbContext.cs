@@ -16,9 +16,22 @@ namespace Scolus.Data
 
         }
 
-        public DbSet<School> Schools { get; set; }
-        public DbSet<Faculty> Faculties { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Position> Positions { get; set; }
+        public DbSet<Phone> Phones { get; set; }
+
+        public DbSet<School> Schools { get; set; }
+        public DbSet<SchoolCustomFieldSetUp> SchoolCustomFieldSetUp { get; set; }
+
+        public DbSet<CustomField> CustomFields { get; set; }
+        public DbSet<CustomFieldOption> CustomFieldOptions { get; set; }
+
+        public DbSet<Faculty> Faculties { get; set; }
+        public DbSet<FacultyCustomFieldSetUp> FacultyCustomFieldSetUps { get; set; }
+        public DbSet<FacultyCustomFieldValue> FacultyCustomFieldValues { get; set; }
+
+        public DbSet<Student> Students { get; set; }
+        public DbSet<StudentCustomFieldSetUp> StudentCustomFieldSetUps { get; set; }
+        public DbSet<StudentCustomFieldValue> StudentCustomFieldValues { get; set; }
     }
 }

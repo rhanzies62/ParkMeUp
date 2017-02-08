@@ -3,23 +3,23 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Scolus.Data.Entities
 {
-    //TODO : Foreign Key
-    //TODO : Entity Property for each foreigh key
-    public class Faculty : BaseUser
+    //TODO: Foreign Key
+    //TODO: StudentType should be the ID in entity look up
+    public class Student : BaseUser
     {
-        public Faculty()
+        public Student()
         {
 
         }
 
         [Key]
-        public int FacultyId { get; set; }
+        public int StudentID { get; set; }
 
         [Required]
         public int SchoolId { get; set; }
 
         [Required]
-        public int PositionId { get; set; }
+        public int StudentType { get; set; }
 
         [Required]
         public int AddressId { get; set; }
