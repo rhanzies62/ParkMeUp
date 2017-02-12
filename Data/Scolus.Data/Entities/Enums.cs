@@ -33,4 +33,11 @@ namespace Scolus.Data.Entities
         Male = 1,
         Female = 2
     }
+
+    public enum CUD
+    {
+        Create = 1,
+        Update = 2,
+        Delete = 3
+    }
 }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,9 +18,11 @@ namespace Scolus.Data.Entities
         public int FacultyCustomFieldValueId { get; set; }
 
         [Required]
+        [ForeignKey("FacultyCustomFieldSetUp")]
         public int FacultyCustomFieldSetUpId { get; set; }
 
         [Required]
+        [ForeignKey("Faculty")]
         public int FacultyID { get; set; }
 
         public string Value { get; set; }
@@ -35,5 +38,8 @@ namespace Scolus.Data.Entities
 
         [Required]
         public DateTime UpdatedOn { get; set; }
+
+        public virtual FacultyCustomFieldSetUp FacultyCustomFieldSetUp { get; set; } 
+        public virtual Faculty Faculty { get; set; }
     }
 }

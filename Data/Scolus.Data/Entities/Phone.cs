@@ -33,5 +33,7 @@ namespace Scolus.Data.Entities
 
         [Required]
         public DateTime UpdatedOn { get; set; }
+
+        public virtual ICollection<Student> Student { get; set; }
     }
 }

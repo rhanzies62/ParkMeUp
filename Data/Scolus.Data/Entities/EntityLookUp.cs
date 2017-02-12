@@ -2,26 +2,22 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Scolus.Data.Entities
 {
-    //TODO : Forgein Key
-    //TODO : CustomFieldId and Text should not be duplicated
-    public class CustomFieldOption : IAudit
+    public class EntityLookUp : IAudit
     {
         [Key]
-        public int CustomFieldOptionId { get; set; }
+        public int EntityLookUpId { get; set; }
 
         [Required]
-        [ForeignKey("CustomField")]
-        public int CustomFieldId { get; set; }
+        public string EntityCode { get; set; }
 
         [Required]
-        public string Text { get; set; }
+        public string Value { get; set; }
 
         [Required]
         public string CreatedBy { get; set; }
@@ -34,7 +30,5 @@ namespace Scolus.Data.Entities
 
         [Required]
         public DateTime UpdatedOn { get; set; }
-
-        public virtual CustomField CustomField { get; set; }
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Scolus.Data.Entities
 {
-    public abstract class CustomField : IAudit
+    public class CustomField : IAudit
     {
         [Key]
         public int CustomFieldId { get; set; }
@@ -32,5 +32,11 @@ namespace Scolus.Data.Entities
 
         [Required]
         public DateTime UpdatedOn { get; set; }
+
+        public virtual ICollection<CustomFieldOption> CustomFieldOptions { get; set; }
+
+        public virtual ICollection<SchoolCustomFieldSetUp> SchoolCustomFieldSetUp { get; set; }
+        public virtual ICollection<FacultyCustomFieldSetUp> FacultyCustomFieldSetUp { get; set; }
+        public virtual ICollection<StudentCustomFieldSetUp> StudentCustomFieldSetUp { get; set; }
     }
 }

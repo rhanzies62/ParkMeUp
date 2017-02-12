@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Scolus.Data.Base
 {
+    //TODO: Foreign Key
     public abstract class BaseUser : IUser, IAudit
     {
         [Required]
@@ -22,6 +23,8 @@ namespace Scolus.Data.Base
 
         [Required]
         public Gender Gender { get; set; }
+
+        public int AccountId { get; set; }
 
         [Required]
         public string CreatedBy { get; set; }

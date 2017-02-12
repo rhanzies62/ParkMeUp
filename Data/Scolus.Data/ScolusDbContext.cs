@@ -11,14 +11,18 @@ namespace Scolus.Data
     public class ScolusDbContext : DbContext
     {
         //TODO : Connection string
-        public ScolusDbContext() : base("")
+        public ScolusDbContext() : base("ScolusEntities")
         {
 
         }
 
+        public DbSet<EntityDataUperLogger> EntityDataUperLoggers { get; set; }
+
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Phone> Phones { get; set; }
+        public DbSet<UserAccount> UserAccounts { get; set; }
+        public DbSet<EntityLookUp> EntityLookUps { get; set; }
 
         public DbSet<School> Schools { get; set; }
         public DbSet<SchoolCustomFieldSetUp> SchoolCustomFieldSetUp { get; set; }
