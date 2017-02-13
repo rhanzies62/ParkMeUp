@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scolus.Data", "Data\Scolus.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.School", "Domain\Domain.School\Domain.School.csproj", "{A868224E-2D69-4BEB-B95E-C9E282E41B4B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{7AE96FB0-F3D9-41C4-82E8-3EFF81EAB80A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Utility", "Common\Common.Utility\Common.Utility.csproj", "{5E0AA10A-6096-4FD0-89A9-BC39865D40B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scolus.Web", "Web\Scolus.Web\Scolus.Web.csproj", "{F8248FAF-CB66-461C-B9D2-8784304C4FCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +35,14 @@ Global
 		{A868224E-2D69-4BEB-B95E-C9E282E41B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A868224E-2D69-4BEB-B95E-C9E282E41B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A868224E-2D69-4BEB-B95E-C9E282E41B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E0AA10A-6096-4FD0-89A9-BC39865D40B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E0AA10A-6096-4FD0-89A9-BC39865D40B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E0AA10A-6096-4FD0-89A9-BC39865D40B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E0AA10A-6096-4FD0-89A9-BC39865D40B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8248FAF-CB66-461C-B9D2-8784304C4FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8248FAF-CB66-461C-B9D2-8784304C4FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8248FAF-CB66-461C-B9D2-8784304C4FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8248FAF-CB66-461C-B9D2-8784304C4FCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +50,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DB00B681-B5D6-4F24-B298-D8CF911088BC} = {15E9E55B-A3B5-4563-AEDD-B9E557A74C2F}
 		{A868224E-2D69-4BEB-B95E-C9E282E41B4B} = {E613EBE5-0A46-43A4-952C-BD26DDC1D99A}
+		{5E0AA10A-6096-4FD0-89A9-BC39865D40B7} = {7AE96FB0-F3D9-41C4-82E8-3EFF81EAB80A}
+		{F8248FAF-CB66-461C-B9D2-8784304C4FCC} = {B7F6A395-82D1-4FC0-BE7A-7002F1B0FFA8}
 	EndGlobalSection
 EndGlobal

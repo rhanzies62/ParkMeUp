@@ -48,6 +48,7 @@
     <Compile Include="DTO\Response.cs" />
     <Compile Include="DTO\School.cs" />
     <Compile Include="Interface\IAudit.cs" />
+    <Compile Include="Interface\IEntityMapper.cs" />
     <Compile Include="Interface\ISchoolLogic.cs" />
     <Compile Include="Interface\IValidationMessage.cs" />
     <Compile Include="Logic\SchoolLogic.cs" />
@@ -57,6 +58,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Utility\Common.Utility.csproj">
+      <Project>{5e0aa10a-6096-4fd0-89a9-bc39865d40b7}</Project>
+      <Name>Common.Utility</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Data\Scolus.Data\Scolus.Data.csproj">
       <Project>{db00b681-b5d6-4f24-b298-d8cf911088bc}</Project>
       <Name>Scolus.Data</Name>
