@@ -130,6 +130,5 @@ namespace Scolus.Data.Service
             return response;
         }
 
-
     }
 }

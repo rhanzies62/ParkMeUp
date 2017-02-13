@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{832DAE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scolus.Data", "Data\Scolus.Data\Scolus.Data.csproj", "{DB00B681-B5D6-4F24-B298-D8CF911088BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.School", "Domain\Domain.School\Domain.School.csproj", "{A868224E-2D69-4BEB-B95E-C9E282E41B4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,11 +25,16 @@ Global
 		{DB00B681-B5D6-4F24-B298-D8CF911088BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB00B681-B5D6-4F24-B298-D8CF911088BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB00B681-B5D6-4F24-B298-D8CF911088BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A868224E-2D69-4BEB-B95E-C9E282E41B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A868224E-2D69-4BEB-B95E-C9E282E41B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A868224E-2D69-4BEB-B95E-C9E282E41B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A868224E-2D69-4BEB-B95E-C9E282E41B4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DB00B681-B5D6-4F24-B298-D8CF911088BC} = {15E9E55B-A3B5-4563-AEDD-B9E557A74C2F}
+		{A868224E-2D69-4BEB-B95E-C9E282E41B4B} = {E613EBE5-0A46-43A4-952C-BD26DDC1D99A}
 	EndGlobalSection
 EndGlobal
